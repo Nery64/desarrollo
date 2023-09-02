@@ -2,10 +2,30 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peliculas-API</title>
+    <title>Películas Populares</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Películas Populares</h1>
+        <div id="languageToggle">
+            <button id="toggleEnglish">English</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="filter">
+            <label for="genreSelect">Filtrar por género:</label>
+            <select id="genreSelect">
+                <!-- Opciones de género se llenarán dinámicamente con JavaScript -->
+            </select>
+        </div>
+
+        <div id="movies">
+            <!-- Las películas se mostrarán aquí -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
