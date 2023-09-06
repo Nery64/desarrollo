@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="icon.png"/>
     <title>Películas Populares</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -9,23 +11,28 @@
     <header>
         <h1>Películas Populares</h1>
         <div id="languageToggle">
-            <button id="toggleEnglish">English</button>
+            <button id="english-button" class="boton-estilizado">English</button>
+            <button id="spanish-button" class="boton-estilizado">Español</button>
         </div>
     </header>
 
     <main>
         <div id="filter">
-            <label for="genreSelect">Filtrar por género:</label>
-            <select id="genreSelect">
+            <label for="genre-select" class="texto-estilizado">Filtrar por género:</label>
+            <select id="genre-select">
                 <!-- Opciones de género se llenarán dinámicamente con JavaScript -->
             </select>
         </div>
-
-        <div id="movies">
+        <div id="pagination">
+            <button id="prev-button" disabled class="boton-estilizado">Anterior</button>
+            <button id="next-button" class="boton-estilizado">Siguiente</button>
+        </div>
+        <div id="movies-list" class="movie-container">
             <!-- Las películas se mostrarán aquí -->
         </div>
     </main>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 </html>
